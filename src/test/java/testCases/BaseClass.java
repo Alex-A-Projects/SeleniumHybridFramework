@@ -64,13 +64,13 @@ public class BaseClass {
         System.out.println("Screenshot taken");
     }
 
-    public String randomestring() {
-        String generatedstring = RandomStringUtils.randomAlphabetic(8);
-        return (generatedstring);
-    }
-
-    public static String randomeNum() {
-        String generatedString2 = RandomStringUtils.randomNumeric(4);
-        return (generatedString2);
-    }
+//    public String randomestring() {
+//        String generatedstring = RandomStringUtils.randomAlphabetic(8);
+//        return (generatedstring);
+//    }
+//
+//    public static String randomeNum() {
+//        String generatedString2 = RandomStringUtils.randomNumeric(4);
+//        return (generatedString2);
+//    }
 }
