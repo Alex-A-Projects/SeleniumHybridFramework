@@ -15,6 +15,9 @@ public class AddCustomerPage {
         ldriver=rdriver;
         PageFactory.initElements(rdriver, this);
     }
+    @FindBy(how = How.XPATH, using = "//div[@class='ns-et7nm-e-19 button-common close-button milo-animation delay-4']/div/span[@class='ns-et7nm-e-21' and @dir='auto' and @x-score='1']\n")
+    @CacheLookup
+    WebElement closeAd;
 
     @FindBy(how = How.XPATH, using ="/html/body/div[3]/div/ul/li[2]/a")
     @CacheLookup
@@ -63,6 +66,11 @@ public class AddCustomerPage {
     @CacheLookup
     @FindBy(how = How.NAME, using = "sub")
     WebElement btnSubmit;
+
+    public void closeAd() {
+        closeAd.click();
+
+    }
 
     public void clickAddNewCustomer() {
         lnkAddNewCustomer.click();
@@ -116,7 +124,4 @@ public class AddCustomerPage {
     public void custsubmit() {
         btnSubmit.click();
     }
-
-
-
 }
