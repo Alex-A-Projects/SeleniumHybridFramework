@@ -15,13 +15,22 @@ public class AddCustomerPage {
         ldriver=rdriver;
         PageFactory.initElements(rdriver, this);
     }
-    @FindBy(how = How.XPATH, using = "//div[@class='ns-et7nm-e-19 button-common close-button milo-animation delay-4']/div/span[@class='ns-et7nm-e-21' and @dir='auto' and @x-score='1']\n")
-    @CacheLookup
-    WebElement closeAd;
 
     @FindBy(how = How.XPATH, using ="/html/body/div[3]/div/ul/li[2]/a")
     @CacheLookup
     WebElement lnkAddNewCustomer;
+
+    @FindBy(how = How.ID, using ="google_ads_iframe_/24132379/INTERSTITIAL_DemoGuru99_0")
+    @CacheLookup
+    WebElement frame1;
+
+    @FindBy(how = How.ID, using ="ad_iframe")
+    @CacheLookup
+    WebElement frame2;
+
+    @FindBy(how = How.XPATH, using ="//div[@id='dismiss-button']/div/span")
+    @CacheLookup
+    WebElement dismissButton;
 
     @FindBy(how = How.NAME, using = "name")
     @CacheLookup
@@ -67,10 +76,6 @@ public class AddCustomerPage {
     @FindBy(how = How.NAME, using = "sub")
     WebElement btnSubmit;
 
-    public void closeAd() {
-        closeAd.click();
-
-    }
 
     public void clickAddNewCustomer() {
         lnkAddNewCustomer.click();

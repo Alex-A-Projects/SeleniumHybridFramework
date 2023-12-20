@@ -1,15 +1,10 @@
 package testCases;
 
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebElement;
 import pageObjects.AddCustomerPage;
 import pageObjects.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.io.IOException;
-
 
 
 public class TC_AddCustomerTest_003 extends BaseClass
@@ -30,28 +25,8 @@ public class TC_AddCustomerTest_003 extends BaseClass
         AddCustomerPage addcust=new AddCustomerPage(driver);
 
         addcust.clickAddNewCustomer();
-
-        //first of all you will need to switch to the iFrame within which the ad is displayed.
-        //After you switch to the iFrame you can locate the "Close" button (it's actually a Span tag) an then click() it.
-        //sendKeys("Close") won't work as it isn't a text input element.
-        WebElement frame1 = driver.findElement(By.id("google_ads_iframe_/24132379/INTERSTITIAL_DemoGuru99_0"));
-        driver.switchTo().frame(frame1);
-        WebElement frame2 = driver.findElement(By.id("ad_iframe"));
-        driver.switchTo().frame(frame2);
-
-        try {
-            WebElement dismissButton = driver.findElement(By.xpath("//div[@id='dismiss-button']/div/span"));
-            dismissButton.click();
-        } catch (NoSuchElementException e) {
-            // If the first button is not present, click the second button
-
-            WebElement secondButton = driver.findElement(By.className("btn"));
-            secondButton.click();
-        }
-
-//        driver.findElement(By.xpath("//div[@id='dismiss-button']/div/span")).click();
-
-        driver.switchTo().defaultContent();
+        Thread.sleep(1000);
+        driver.manage().window().maximize();
 
         logger.info("providing customer details....");
 
@@ -59,7 +34,6 @@ public class TC_AddCustomerTest_003 extends BaseClass
         addcust.custName("Alex");
         addcust.custgender("male");
         addcust.custdob("19","11","1985");
-        Thread.sleep(5000);
         addcust.custaddress("USA");
         addcust.custcity("CHT");
         addcust.custstate("NC");

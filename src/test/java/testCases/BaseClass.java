@@ -60,10 +60,10 @@ public class BaseClass {
     }
 
     @AfterClass
-//    public void tearDown()
-//    {
-//        driver.quit();
-//    }
+    public void tearDown()
+    {
+        driver.quit();
+    }
 
     public void captureScreen(WebDriver driver, String tname) throws IOException {
         TakesScreenshot ts = (TakesScreenshot) driver;
