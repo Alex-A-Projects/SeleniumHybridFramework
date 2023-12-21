@@ -2,6 +2,7 @@ package testCases;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -12,6 +13,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
@@ -39,10 +41,13 @@ public class BaseClass {
         logger = Logger.getLogger("ebanking");
         PropertyConfigurator.configure("Log4j.properties");
 
+        ChromeOptions opt=new ChromeOptions();
+        opt.addExtensions(new File("./Extension/1Block.crx"));
+
         if(br.equals("chrome"))
         {
             System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());
-            driver=new ChromeDriver();
+             driver=new ChromeDriver(opt);
         }
         else if(br.equals("firefox"))
         {
