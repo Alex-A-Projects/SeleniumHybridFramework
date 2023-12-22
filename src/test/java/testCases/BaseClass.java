@@ -42,8 +42,8 @@ public class BaseClass {
         PropertyConfigurator.configure("Log4j.properties");
 
         ChromeOptions opt=new ChromeOptions();
-//        opt.addExtensions(new File("./Extension/1Block.crx"));    // work
-        opt.addExtensions(new File("/Users/oleksii_kolesnik/IdeaProjects/SeleniumHybridFramework/Extention/1Block.crx"));   // home
+        opt.addExtensions(new File("./Extension/1Block.crx"));    // work
+//        opt.addExtensions(new File("/Users/oleksii_kolesnik/IdeaProjects/SeleniumHybridFramework/Extention/1Block.crx"));   // home
         if(br.equals("chrome"))
         {
             System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());
