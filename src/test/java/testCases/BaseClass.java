@@ -38,16 +38,20 @@ public class BaseClass {
     @BeforeClass
     public void setup(@Optional("chrome") String br)
     {
-        logger = Logger.getLogger("ebanking");
+        logger = Logger.getLogger("ebanking");   // ebanking - name of the project
         PropertyConfigurator.configure("Log4j.properties");
 
-        ChromeOptions opt=new ChromeOptions();
+        // Block Ads
+//        ChromeOptions opt=new ChromeOptions();
 //        opt.addExtensions(new File("/Users/alexander.anderson/IdeaProjects/SeleniumHybridFramework/Extension/1Block.crx"));    // work
-        opt.addExtensions(new File("/Users/oleksii_kolesnik/IdeaProjects/SeleniumHybridFramework/Extention/1Block.crx"));   // home
+//        opt.addExtensions(new File("/Users/oleksii_kolesnik/IdeaProjects/SeleniumHybridFramework/Extention/1Block.crx"));   // home
+
+
         if(br.equals("chrome"))
         {
             System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());
-             driver=new ChromeDriver(opt);
+            driver=new ChromeDriver();
+//             driver=new ChromeDriver(opt);  // Block Ads
         }
         else if(br.equals("firefox"))
         {

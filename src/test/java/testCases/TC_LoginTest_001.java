@@ -1,25 +1,21 @@
 package testCases;
-
-
 import java.io.IOException;
-
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import pageObjects.HomePage;
 import pageObjects.LoginPage;
 
 
-public class TC_LoginTest_001 extends BaseClass
-{
+public class TC_LoginTest_001 extends BaseClass {
 
     @Test
-    public void loginTest() throws IOException
-    {
+    public void loginTest() throws IOException {
 
         logger.info("URL is opened");
 
-        LoginPage lp=new LoginPage(driver);
+        LoginPage lp = new LoginPage(driver);
+
         lp.setUserName(username);
         logger.info("Entered username");
 
@@ -28,17 +24,17 @@ public class TC_LoginTest_001 extends BaseClass
 
         lp.clickSubmit();
 
-        if(driver.getTitle().equals("Guru99 Bank Manager HomePage"))
-        {
+        // Assertion
+        HomePage hp = new HomePage(driver);
+        String headingText = hp.getHeadingText();
+
+        if (headingText.equals("Institutes")) {
             Assert.assertTrue(true);
             logger.info("Login test passed");
-        }
-        else
-        {
-            captureScreen(driver,"loginTest");
+        } else {
+            captureScreen(driver, "loginTest");
             Assert.assertTrue(false);
             logger.info("Login test failed");
         }
-
     }
 }
