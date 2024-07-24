@@ -24,7 +24,7 @@ public class TC_LoginTest_001 extends BaseClass {
 
         lp.clickSubmit();
 
-        // Assertion
+        // Assertion 1
         HomePage hp = new HomePage(driver);
         String headingText = hp.getHeadingText();
 
