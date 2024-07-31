@@ -421,3 +421,67 @@
 2024-07-28 18:49:41,313 - ebanking -INFO - Selected set End Button
 2024-07-28 18:49:43,368 - ebanking -INFO -  Selected end Proctoring Button
 2024-07-28 18:49:43,411 - ebanking -INFO - the specified element is present
+2024-07-29 14:49:04,860 - ebanking -INFO - URL is opened
+2024-07-29 14:49:04,991 - ebanking -INFO - Entered username
+2024-07-29 14:49:07,086 - ebanking -INFO - Entered password
+2024-07-29 14:49:09,157 - ebanking -INFO - clicked Submit
+2024-07-29 14:49:13,286 - ebanking -INFO - Course Selected
+2024-07-29 14:49:15,353 - ebanking -INFO - Selected Launch
+2024-07-29 14:49:19,463 - ebanking -INFO - interacted With Checkbox
+2024-07-29 14:49:21,535 - ebanking -INFO - selected Next Button
+2024-07-29 14:49:23,602 - ebanking -INFO - selected AgreeExamRulesCheckbox
+2024-07-29 14:49:25,679 - ebanking -INFO - selected Start Proctoring Button
+2024-07-29 14:49:27,750 - ebanking -INFO - Selected go To Meeting Button
+2024-07-29 14:49:29,811 - ebanking -INFO - Selected set End Button
+2024-07-29 14:49:31,869 - ebanking -INFO -  Selected end Proctoring Button
+2024-07-29 14:49:31,934 - ebanking -INFO - the specified element is present
+2024-07-31 11:22:56,037 - ebanking -INFO - URL is opened
+2024-07-31 11:23:00,217 - ebanking -INFO - Entered username
+2024-07-31 11:23:02,319 - ebanking -INFO - Entered password
+2024-07-31 11:23:06,444 - ebanking -INFO - Login test passed
+2024-07-31 11:26:44,680 - ebanking -INFO - URL is opened
+2024-07-31 11:26:48,813 - ebanking -INFO - Entered username
+2024-07-31 11:26:50,923 - ebanking -INFO - Entered password
+2024-07-31 11:26:55,043 - ebanking -INFO - Login test passed
+2024-07-31 11:27:34,025 - ebanking -INFO - Login failed
+2024-07-31 11:27:40,623 - ebanking -INFO - Login failed
+2024-07-31 11:27:47,381 - ebanking -INFO - Login failed
+2024-07-31 11:27:53,888 - ebanking -INFO - Login failed
+2024-07-31 11:28:20,435 - ebanking -INFO - Login passed
+2024-07-31 11:29:43,805 - ebanking -INFO - URL is opened
+2024-07-31 11:29:43,926 - ebanking -INFO - Entered username
+2024-07-31 11:29:46,028 - ebanking -INFO - Entered password
+2024-07-31 11:29:48,103 - ebanking -INFO - clicked Submit
+2024-07-31 11:29:52,219 - ebanking -INFO - Course Selected
+2024-07-31 11:29:54,287 - ebanking -INFO - Selected Launch
+2024-07-31 11:29:58,404 - ebanking -INFO - interacted With Checkbox
+2024-07-31 11:30:00,470 - ebanking -INFO - selected Next Button
+2024-07-31 11:30:02,537 - ebanking -INFO - selected AgreeExamRulesCheckbox
+2024-07-31 11:30:04,620 - ebanking -INFO - selected Start Proctoring Button
+2024-07-31 11:30:06,684 - ebanking -INFO - Selected go To Meeting Button
+2024-07-31 11:30:08,741 - ebanking -INFO - Selected set End Button
+2024-07-31 11:30:10,799 - ebanking -INFO -  Selected end Proctoring Button
+2024-07-31 11:30:10,850 - ebanking -INFO - the specified element is present
+2024-07-31 11:30:28,734 - ebanking -INFO - URL is opened
+2024-07-31 11:30:32,875 - ebanking -INFO - Entered username
+2024-07-31 11:30:34,980 - ebanking -INFO - Entered password
+2024-07-31 11:30:39,101 - ebanking -INFO - Login test passed
+2024-07-31 11:30:49,340 - ebanking -INFO - Login failed
+2024-07-31 11:30:55,901 - ebanking -INFO - Login failed
+2024-07-31 11:31:02,624 - ebanking -INFO - Login failed
+2024-07-31 11:31:09,137 - ebanking -INFO - Login failed
+2024-07-31 11:31:35,736 - ebanking -INFO - Login passed
+2024-07-31 11:31:38,858 - ebanking -INFO - URL is opened
+2024-07-31 11:31:38,975 - ebanking -INFO - Entered username
+2024-07-31 11:31:41,079 - ebanking -INFO - Entered password
+2024-07-31 11:31:43,150 - ebanking -INFO - clicked Submit
+2024-07-31 11:31:47,250 - ebanking -INFO - Course Selected
+2024-07-31 11:31:49,321 - ebanking -INFO - Selected Launch
+2024-07-31 11:31:53,440 - ebanking -INFO - interacted With Checkbox
+2024-07-31 11:31:55,498 - ebanking -INFO - selected Next Button
+2024-07-31 11:31:57,565 - ebanking -INFO - selected AgreeExamRulesCheckbox
+2024-07-31 11:31:59,651 - ebanking -INFO - selected Start Proctoring Button
+2024-07-31 11:32:01,711 - ebanking -INFO - Selected go To Meeting Button
+2024-07-31 11:32:03,777 - ebanking -INFO - Selected set End Button
+2024-07-31 11:32:05,838 - ebanking -INFO -  Selected end Proctoring Button
+2024-07-31 11:32:05,881 - ebanking -INFO - the specified element is present
