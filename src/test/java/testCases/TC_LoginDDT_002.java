@@ -3,12 +3,14 @@ package testCases;
 import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import utilities.XLUtils;
 
+@Listeners({AllureListener.class})
 public class TC_LoginDDT_002 extends BaseClass
 {
 

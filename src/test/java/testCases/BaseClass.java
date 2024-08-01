@@ -39,7 +39,7 @@ public class BaseClass {
     @BeforeClass
     public void setup(@Optional("chrome") String br) {
         // Initialize the logger for the project
-        logger = Logger.getLogger("ebanking");   // ebanking - name of the project
+        logger = Logger.getLogger("whatever project");   //
         PropertyConfigurator.configure("Log4j.properties");
 
         // Uncomment the following block to add ad-blocker extension in Chrome
@@ -103,5 +103,10 @@ public class BaseClass {
     public static String randomeNum() {
         String generatedString2 = RandomStringUtils.randomNumeric(4);
         return (generatedString2);
+    }
+
+    // Method to get the WebDriver instance
+    public static WebDriver getDriver() {
+        return driver;
     }
 }

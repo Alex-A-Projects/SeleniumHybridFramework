@@ -485,3 +485,31 @@
 2024-07-31 11:32:03,777 [main] INFO ebanking - Selected set End Button
 2024-07-31 11:32:05,838 [main] INFO ebanking -  Selected end Proctoring Button
 2024-07-31 11:32:05,881 [main] INFO ebanking - the specified element is present
+2024-08-01 10:11:17,173 [main] INFO ebanking - URL is opened
+2024-08-01 13:58:50,940 [main] INFO ebanking - URL is opened
+2024-08-01 13:58:55,068 [main] INFO ebanking - Entered username
+2024-08-01 13:58:57,169 [main] INFO ebanking - Entered password
+2024-08-01 13:59:01,292 [main] INFO ebanking - Login test passed
+2024-08-01 14:59:46,249 [main] INFO ebanking - URL is opened
+2024-08-01 14:59:50,398 [main] INFO ebanking - Entered username
+2024-08-01 14:59:52,489 [main] INFO ebanking - Entered password
+2024-08-01 14:59:56,618 [main] INFO ebanking - Login test passed
+2024-08-01 15:32:49,792 [main] INFO ebanking - URL is opened
+2024-08-01 15:55:42,658 [main] INFO ebanking - URL is opened
+2024-08-01 15:55:46,808 [main] INFO ebanking - Entered username
+2024-08-01 15:55:48,908 [main] INFO ebanking - Entered password
+2024-08-01 15:55:53,030 [main] INFO ebanking - Login test passed
+2024-08-01 15:59:38,140 [main] INFO ebanking - URL is opened
+2024-08-01 15:59:42,282 [main] INFO ebanking - Entered username
+2024-08-01 15:59:44,374 [main] INFO ebanking - Entered password
+2024-08-01 15:59:48,492 [main] INFO ebanking - Login test passed
+2024-08-01 16:05:01,767 [main] INFO ebanking - Login failed
+2024-08-01 16:05:08,312 [main] INFO ebanking - Login failed
+2024-08-01 16:05:14,882 [main] INFO ebanking - Login failed
+2024-08-01 16:05:21,403 [main] INFO ebanking - Login failed
+2024-08-01 16:05:48,006 [main] INFO ebanking - Login passed
+2024-08-01 16:10:57,498 [main] INFO ebanking - Login failed
+2024-08-01 16:11:04,158 [main] INFO ebanking - Login failed
+2024-08-01 16:11:10,784 [main] INFO ebanking - Login failed
+2024-08-01 16:11:17,408 [main] INFO ebanking - Login failed
+2024-08-01 16:11:44,032 [main] INFO ebanking - Login passed

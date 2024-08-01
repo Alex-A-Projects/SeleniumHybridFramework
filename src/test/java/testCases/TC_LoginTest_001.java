@@ -1,15 +1,28 @@
 package testCases;
 
 import java.io.IOException;
+
+import io.qameta.allure.*;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 
+
+@Listeners({AllureListener.class})
+
 public class TC_LoginTest_001 extends BaseClass {
 
-    @Test
+
+    @Test(priority=1, description="Verify ...")
+    @Severity(SeverityLevel.MINOR)
+    @Description("Verify ....")
+    @Epic("EP001")
+    @Feature("Feature1: Login")
+    @Story("Story:Login")
+    @Step("Verify Login")
     public void loginTest() throws IOException, InterruptedException {
 
         // Log message indicating that the URL has been opened
