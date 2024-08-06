@@ -513,3 +513,57 @@
 2024-08-01 16:11:10,784 [main] INFO ebanking - Login failed
 2024-08-01 16:11:17,408 [main] INFO ebanking - Login failed
 2024-08-01 16:11:44,032 [main] INFO ebanking - Login passed
+2024-08-02 13:29:08,900 [main] INFO whatever project - Login failed
+2024-08-02 13:29:15,684 [main] INFO whatever project - Login failed
+2024-08-02 13:29:22,286 [main] INFO whatever project - Login failed
+2024-08-02 13:29:28,888 [main] INFO whatever project - Login failed
+2024-08-02 13:29:55,523 [main] INFO whatever project - Login passed
+2024-08-02 13:32:01,781 [main] INFO whatever project - Login failed
+2024-08-02 13:32:08,467 [main] INFO whatever project - Login failed
+2024-08-02 13:32:15,063 [main] INFO whatever project - Login failed
+2024-08-02 13:32:21,667 [main] INFO whatever project - Login failed
+2024-08-02 13:32:48,325 [main] INFO whatever project - Login passed
+2024-08-02 14:24:59,952 [main] INFO whatever project - Login failed
+2024-08-02 14:25:06,598 [main] INFO whatever project - Login failed
+2024-08-02 14:25:13,149 [main] INFO whatever project - Login failed
+2024-08-02 14:25:19,644 [main] INFO whatever project - Login failed
+2024-08-02 14:25:46,176 [main] INFO whatever project - Login passed
+2024-08-02 14:33:15,408 [main] INFO whatever project - URL is opened
+2024-08-02 14:33:19,542 [main] INFO whatever project - Entered username
+2024-08-02 14:33:21,635 [main] INFO whatever project - Entered password
+2024-08-02 14:33:25,748 [main] INFO whatever project - Login test passed
+2024-08-02 14:49:56,047 [main] INFO whatever project - Login failed
+2024-08-02 14:50:02,744 [main] INFO whatever project - Login failed
+2024-08-02 14:50:09,326 [main] INFO whatever project - Login failed
+2024-08-02 14:50:15,895 [main] INFO whatever project - Login failed
+2024-08-02 14:50:42,530 [main] INFO whatever project - Login passed
+2024-08-02 15:01:09,677 [main] INFO YourProjectName - Login failed
+2024-08-02 15:01:16,386 [main] INFO YourProjectName - Login failed
+2024-08-02 15:01:23,011 [main] INFO YourProjectName - Login failed
+2024-08-02 15:01:29,578 [main] INFO YourProjectName - Login failed
+2024-08-02 15:01:56,267 [main] INFO YourProjectName - Login passed
+2024-08-02 16:08:04,214 [main] INFO whatever project - URL is opened
+2024-08-02 16:08:08,357 [main] INFO whatever project - Entered username
+2024-08-02 16:08:10,453 [main] INFO whatever project - Entered password
+2024-08-02 16:08:14,572 [main] INFO whatever project - Login test passed
+2024-08-06 10:00:50,645 [main] INFO whatever project - URL is opened
+2024-08-06 10:00:54,783 [main] INFO whatever project - Entered username
+2024-08-06 10:00:56,873 [main] INFO whatever project - Entered password
+2024-08-06 10:17:42,719 [main] INFO whatever project - URL is opened
+2024-08-06 10:17:46,867 [main] INFO whatever project - Entered username
+2024-08-06 10:17:48,965 [main] INFO whatever project - Entered password
+2024-08-06 10:18:39,790 [main] INFO whatever project - URL is opened
+2024-08-06 10:18:43,934 [main] INFO whatever project - Entered username
+2024-08-06 10:18:46,032 [main] INFO whatever project - Entered password
+2024-08-06 10:35:09,383 [main] INFO whatever project - URL is opened
+2024-08-06 10:35:13,563 [main] INFO whatever project - Entered username
+2024-08-06 10:35:15,654 [main] INFO whatever project - Entered password
+2024-08-06 10:39:37,152 [main] INFO whatever project - Login failed
+2024-08-06 10:39:43,814 [main] INFO whatever project - Login failed
+2024-08-06 10:39:50,405 [main] INFO whatever project - Login failed
+2024-08-06 10:39:56,991 [main] INFO whatever project - Login failed
+2024-08-06 10:40:23,617 [main] INFO whatever project - Login passed
+2024-08-06 11:04:32,508 [main] INFO whatever project - Login failed
+2024-08-06 11:04:39,498 [main] INFO whatever project - Login failed
+2024-08-06 11:04:46,277 [main] INFO whatever project - Login failed
+2024-08-06 11:04:53,038 [main] INFO whatever project - Login failed
