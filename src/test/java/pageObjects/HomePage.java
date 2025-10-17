@@ -33,32 +33,36 @@ public class HomePage {
     // Select a course
     @FindBy(xpath = "(//input[@class='ant-radio-input'])[3]")
     @CacheLookup
-    WebElement SelectCourse;
+    WebElement selectCourse;
 
     // Launch
     @FindBy(xpath = "//button[@class='ant-btn css-1m62vyb ant-btn-primary w-auto inline-flex items-center']")
     @CacheLookup
-    WebElement SelectLaunch;
+    WebElement selectLaunch;
 
+    // ✅ Return the heading element for explicit wait in test
+    public WebElement getHeadingElement() {
+        return heading;
+    }
 
-
+    // ✅ Return heading text for assertions
     public String getHeadingText() {
         return heading.getText();
     }
 
-    public void  getUserIcon() {
+    public void clickUserIcon() {
         userIcon.click();
     }
 
-    public void  getLogout() {
+    public void clickLogout() {
         logout.click();
     }
 
-    public void  selectCourse() {
-        SelectCourse.click();
+    public void selectCourse() {
+        selectCourse.click();
     }
 
-    public void  selectLaunch() {
-        SelectLaunch.click();
+    public void selectLaunch() {
+        selectLaunch.click();
     }
 }

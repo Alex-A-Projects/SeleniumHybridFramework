@@ -6,6 +6,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pageObjects.LoginPage;
+import utilities.AllureListener;
 import utilities.XLUtils;
 
 @Listeners({AllureListener.class})

@@ -3,64 +3,75 @@ package testCases;
 import java.io.IOException;
 
 import io.qameta.allure.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
-
+import utilities.AllureListener;
 
 @Listeners({AllureListener.class})
-
+@Epic("EP001")
+@Feature("Feature1: Login")
 public class TC_LoginTest_001 extends BaseClass {
 
+    @Test(priority = 1, description = "Verify that user can successfully login with valid credentials")
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Test Description: Verify login functionality with valid username and password")
+    @Story("Story: Valid Login Functionality")
+    public void loginTest() throws IOException {
 
-    @Test(priority=1, description="Verify ...")
-    @Severity(SeverityLevel.MINOR)
-    @Description("Verify ....")
-    @Epic("EP001")
-    @Feature("Feature1: Login")
-    @Story("Story:Login")
-    @Step("Verify Login")
-    public void loginTest() throws IOException, InterruptedException {
+        logger.info("********** Starting Login Test **********");
 
-        // Log message indicating that the URL has been opened
-        logger.info("URL is opened");
-        Thread.sleep(2000);
-
-        // Create an instance of LoginPage to interact with the login page elements
+        // Create page objects
         LoginPage lp = new LoginPage(driver);
-        Thread.sleep(2000);
-
-        // Set the username in the login form
-        lp.setUserName(username);
-        logger.info("Entered username");
-        Thread.sleep(2000);
-
-        // Set the password in the login form
-        lp.setPassword(password);
-        logger.info("Entered password");
-        Thread.sleep(2000);
-
-        // Click the submit button to attempt login
-        lp.clickSubmit();
-        Thread.sleep(2000);
-
-        // Assertion 1: Verify successful login by checking if the heading text on the home page matches the expected value
         HomePage hp = new HomePage(driver);
-        String headingText = hp.getHeadingText();
 
-        // Check if the heading text is as expected
-        if (headingText.equals("Institutes")) {
-            // If the heading text is correct, the login test is considered successful
-            Assert.assertTrue(true);
-            logger.info("Login test passed");
-        } else {
-            // If the heading text is not correct, capture a screenshot and mark the test as failed
-            captureScreen(driver, "loginTest");
-            Assert.assertTrue(false);
-            logger.info("Login test failed");
+        // ✅ Selenium 3-compatible WebDriverWait
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+
+        openLoginPage();
+        performLogin(lp);
+        verifyLoginSuccess(hp, wait);
+
+        logger.info("********** Finished Login Test **********");
+    }
+
+    @Step("Open the login page")
+    private void openLoginPage() {
+        logger.info("Opening application URL...");
+        driver.get(baseURL); // baseURL should be initialized in BaseClass
+    }
+
+    @Step("Login with username and password")
+    private void performLogin(LoginPage lp) {
+        logger.info("Entering username and password...");
+        lp.setUserName(username);
+        lp.setPassword(password);
+        lp.clickSubmit();
+        logger.info("Clicked login button");
+    }
+
+    @Step("Verify that user is logged in successfully")
+    private void verifyLoginSuccess(HomePage hp, WebDriverWait wait) throws IOException {
+        logger.info("Verifying login result...");
+
+        // Wait for heading element to appear on home page
+        wait.until(ExpectedConditions.visibilityOf(hp.getHeadingElement()));
+
+        String headingText = hp.getHeadingText().trim();
+        logger.info("Heading text found: " + headingText);
+
+        try {
+            Assert.assertEquals(headingText, "Institutes", "Login verification failed — unexpected heading.");
+            logger.info("Login test passed ✅");
+        } catch (AssertionError e) {
+            captureScreen(driver, "loginTestFailed");
+            logger.error("Login test failed ❌", e);
+            throw e;
         }
     }
 }

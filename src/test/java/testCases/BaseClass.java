@@ -43,12 +43,6 @@ public class BaseClass {
         logger = Logger.getLogger("whatever project");   //
         PropertyConfigurator.configure("Log4j.properties");
 
-        // Uncomment the following block to add ad-blocker extension in Chrome
-        /*
-        ChromeOptions opt = new ChromeOptions();
-        opt.addExtensions(new File("/path/to/1Block.crx"));  // Update the path as needed
-        */
-
         // Set up the WebDriver based on the specified browser
         if (br.equals("chrome")) {
             System.setProperty("webdriver.chrome.driver", readconfig.getChromePath());
@@ -66,8 +60,6 @@ public class BaseClass {
         // Set Chrome options
         ChromeOptions options = new ChromeOptions();
 
-        ////send fake video
-        // options.addArguments("--use-file-for-fake-video-capture=/Users/alexander.anderson/IdeaProjects/bSecurePro/MicrosoftTeams-video.mp4");
 
         // Add additional arguments to automatically grant screen sharing permission
         options.addArguments("--auto-select-desktop-capture-source=Entire screen");
@@ -85,15 +77,6 @@ public class BaseClass {
         driver.quit();
     }
 
-//    // Method to capture a screenshot
-//    public void captureScreen(WebDriver driver, String tname) throws IOException {
-//        TakesScreenshot ts = (TakesScreenshot) driver;
-//        File source = ts.getScreenshotAs(OutputType.FILE);
-//        File target = new File(System.getProperty("user.dir") + "/Screenshots/" + tname + ".png");
-//        FileUtils.copyFile(source, target);
-//        System.out.println("Screenshot taken");
-//    }
-
     // Method to capture a screenshot and attach it to Allure
     @Attachment(value = "Page screenshot", type = "image/png")
     public byte[] captureScreen(WebDriver driver, String tname) throws IOException {
@@ -105,10 +88,7 @@ public class BaseClass {
         System.out.println("Screenshot taken and saved to Allure report");
         return screenshot;
     }
-
-
-
-
+    
     // Method to generate a random alphanumeric string
     public String randomestring() {
         String generatedstring = RandomStringUtils.randomAlphabetic(8);
