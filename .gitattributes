@@ -1,0 +1,5 @@
+# .gitattributes
+*.html linguist-detectable=false
+*.xml linguist-detectable=false
+test-output/* linguist-detectable=false
+allure-results/* linguist-detectable=false
